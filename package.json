@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "test": "NODE_ENV=TEST mocha test/**/*.js --timeout 10000"
   },
   "author": "aayush",
   "license": "ISC",
