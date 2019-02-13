@@ -1,0 +1,28 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "author": "aayush",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "chai-http": "^4.2.1",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "jsdom": "^13.2.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
