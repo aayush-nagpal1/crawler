@@ -20,3 +20,23 @@ describe('Return an array of links',function(){
        done();
     });
 });
+
+
+
+describe('Return a clean url removing anything following a # or ?',function(){
+    it('Returns clean url', function(done) {
+        getAllLinksInURL(url+"#option1")
+        .then(res=>{
+            expect(res).to.be.equals("https://wiprodigital.com/");
+        })
+       done();
+    });
+
+    it('Returns clean url', function(done) {
+        getAllLinksInURL(url+"?option2")
+        .then(res=>{
+            expect(res).to.be.equals("https://wiprodigital.com/");
+        })
+       done();
+    });
+});
