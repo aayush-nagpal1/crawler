@@ -8,4 +8,14 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run NPM eslint
       uses: anna-money/github-actions-npm@v1
-       
+  runDepCheck:
+    name: Run Dependancy check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: npm-depcheck
+        uses: tj-actions/depcheck@v3
+        with:
+          dir: '.'
+          ignores: 'eslint,babel-*'
+        
