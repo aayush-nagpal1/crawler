@@ -9,6 +9,5 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
       with:
-        host: https://437de7874c73.ngrok.io/sessions/new
-        login: admin
-        password: admin
+        host: https://437de7874c73.ngrok.io/
+        login: aayush
