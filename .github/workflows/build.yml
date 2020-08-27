@@ -10,4 +10,5 @@ jobs:
       uses: kitabisa/sonarqube-action@master
       with:
         host: https://437de7874c73.ngrok.io/
-        login: aayush
+        login: admin
+        password: admin
